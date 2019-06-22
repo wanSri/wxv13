@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: search-web
+  registry:
+    protocol: zookeeper
+    address: 192.168.230.128:2181
+
+
+server:
+  port: 9092
+
+spring:
+  rabbitmq:
+    addresses: 192.168.230.128
+    username: user
+    password: 111047
+    virtual-host: /java

@@ -1,0 +1,25 @@
+dubbo:
+  application:
+    name: user-service
+  registry:
+    protocol: zookeeper
+    address: 192.168.230.128:2181
+server:
+  port: 9095
+
+spring:
+  mail:
+    host: SMTP.qq.com
+    username: 1411062430@qq.com
+    password: mdapxgjmoarkfhgi
+    default-encoding: utf-8
+  rabbitmq:
+    username: user
+    password: 111047
+    virtual-host: /java
+    addresses: 192.168.230.128
+
+mail:
+  fromAddr: 1411062430@qq.com
+
+

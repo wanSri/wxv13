@@ -1,0 +1,9 @@
+dubbo:
+  application:
+    name: index-web
+  registry:
+    address: 192.168.230.128:2181
+    protocol: zookeeper
+
+server:
+  port: 8081

@@ -1,0 +1,29 @@
+spring:
+  data:
+    solr:
+      host: http://192.168.230.128:8083/solr
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: JLU7SS6ZL5vcYDUNBA3M17wWkqGzqTgufAZM/7tSp9jXQk5MxwirwYDgmZ4OnjQomKATV8Sunh+E0939c+B8bg==
+    url: jdbc:mysql:///v12?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    druid:
+      filter:
+        config:
+          enabled: true
+      connection-properties: config.decrypt=true;config.decrypt.key=${public-key}
+
+public-key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJo6OYgmxchSEEI5WlMgQtLhKQbVr2dut663TbJW9QoxccV7+SQZ0f9xrpy2rnXOG4siTgmgHXGHEhmL9ZpFqBkCAwEAAQ==
+
+
+dubbo:
+  application:
+    name: searchService
+  registry:
+    protocol: zookeeper
+    address: 192.168.230.128:2181
+
+
+  protocol: 21889
+
+
